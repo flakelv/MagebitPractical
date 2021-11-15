@@ -1,0 +1,281 @@
+* {                        /* Removing any margins or padding that could occur, creating a clear "palette" */
+    overflow-x: hidden;    /* Remove side (x axis) scroll bar */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background-color: transparent;
+}
+
+body {
+    color: #6A707B;
+}
+.hr {
+    color: black;
+}
+
+#summer_image {
+    position: absolute;
+    background: url(Images/image_summer.png) repeat right top;
+    left: 680px;
+}
+
+#logo {
+    position: absolute;
+    height:40px;            /*- Setting the original size */
+    width: 25px;            /*- Setting the original size */
+    left: 100px;            /*- Changing position on X axis */
+    top: 100px;             /*- Changing position on Y axis */
+}
+
+#logo_text {
+    position: absolute;
+    height: 16px;
+    width: 78px;
+    left: 140px;
+    top: 120px;
+}
+
+#menu {
+    position: absolute;
+    left: 331px;
+    top: 114px;
+}
+
+.pages {
+    text-decoration: none;      /* Remove initial text decoration (underline) */
+    color: #6A707B;
+    font-family: Arial, serif;
+    font-size: 16px;
+    margin-right: 30px;         /* Create spacing in between menu buttons */
+}
+
+#trophy {
+    position: absolute;
+    top: 269px;
+    left: 140px;
+    display: none;
+}
+
+#heading_1 {
+    position: absolute;
+    top: 374px;
+    left: 140px;
+
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    color: #131821;
+}
+
+#subheading_1 {
+    position: absolute;
+    left: 140px;
+    top: 433px;
+
+    font-family: Arial, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6A707B;
+}
+
+#form_1 {
+    position: absolute;
+    width: 663px;
+    height: 70px;
+    left: 100px;
+    top: 539px;
+    background: #FFFFFF;
+    border-top: 1px solid #E3E3E4;
+    border-right: 1px solid #E3E3E4;
+    border-bottom: 1px solid #E3E3E4;
+    border-left: 4px solid #4066A5;
+    box-sizing: border-box;
+    padding: 27px;
+    overflow-y: hidden;
+    transition: all 0.5s;
+}
+
+#form_1:hover {
+    background: #FFFFFF;
+    border: 1px solid #4066A5;
+    border-left: 4px solid #4066A5;
+    box-sizing: border-box;
+    box-shadow: 0 30px 40px rgba(19, 24, 33, 0.06);
+    opacity: 1;
+}
+
+#text{
+    position: absolute;
+    top: 625px;
+    left: 100px;
+    display: block;
+    font-family: Arial, serif;
+}
+
+::placeholder {
+    font-family: Arial, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#rules {
+    position: absolute;
+    left: 140px;
+    top: 663px;
+}
+
+
+#TOS {
+    vertical-align: super;
+    margin-left: 15px;
+}
+
+#TermsOfService {
+    color: #131821;
+}
+
+#TermsOfService:hover {
+    color: #4066A5;
+}
+
+#TermsOfService:visited {
+    color: #233759;
+}
+
+hr {
+    border-top: 1px solid #E3E3E4;
+    width: 400px;
+    margin-top: 740px;
+    margin-left: 140px;
+
+}
+
+#MyCheckbox {
+    display: none;
+}
+
+label:before {
+    content: url(Images/unchecked.png);
+    position: absolute;
+    z-index: 100;
+    transition-duration: 0.4s;
+}
+
+label img{
+    transition-duration: 0.2s;
+}
+
+:checked + label:before{
+    content: url(Images/checked.png);
+
+}
+
+.socials ul {
+    position:absolute;
+    display: flex;
+    top: 791px;
+    left: 218px;
+    margin: 0;
+    padding: 0;
+    transform: translate(-40px, -22px);
+}
+
+.socials ul li {
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+}
+
+.socials ul li .fab {
+    color: #131821;
+    opacity: 0.3;
+    padding: 15px;
+    transition: 0.6s;
+}
+
+.socials ul li a {
+    position: relative;
+    display: block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border: 2px solid #E2E3E4;
+    text-align: center;
+    overflow-y: hidden;
+    transition: 0.6s;
+    opacity: 1;
+}
+
+.socials ul li a:hover{
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+    transform: translate(0, -10px);
+}
+
+.socials ul li #facebook:hover {
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.socials ul li #instagram:hover {
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.socials ul li #twitter:hover {
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.socials ul li #youtube:hover {
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+
+.socials ul li:nth-child(1) a:hover {
+    background-color: #4267B2;
+    border: 2px solid #4267B2;
+
+}
+
+.socials ul li:nth-child(2) a:hover {
+    background-color: #C13584;
+    border: 2px solid #C13584;
+}
+
+.socials ul li:nth-child(3) a:hover {
+    background-color: #1DA1F2;
+    border: 2px solid #1DA1F2;
+}
+
+.socials ul li:nth-child(4) a:hover {
+    background-color: #FF0000;
+    border: 2px solid #FF0000;
+}
+
+.socials ul li:nth-child(1) a:active {
+    background-color: #2F4A80;
+    border: 2px solid #2F4A80;
+}
+
+.socials ul li:nth-child(2) a:active {
+    background-color: #8F2762;
+    border: 2px solid #8F2762;
+}
+.socials ul li:nth-child(3) a:active {
+    background-color: #177FBF;
+    border: 2px solid #177FBF;
+}
+.socials ul li:nth-child(4) a:active {
+    background-color: #CC0000;
+    border: 2px solid #CC0000;
+}
